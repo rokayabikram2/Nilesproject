@@ -1,0 +1,88 @@
+/* header section */
+.fa-chevron-down {
+  display: none !important;
+}
+/* main section */
+.owl-theme .owl-stage-outer {
+  height: 100%;
+}
+.owl-theme .owl-stage-outer .owl-stage {
+  height: 100%;
+}
+.owl-theme .owl-stage-outer .owl-stage .owl-item {
+  height: 100%;
+}
+.owl-theme .owl-stage-outer .owl-stage .owl-item .item {
+  height: 100%;
+}
+.owl-theme .owl-stage-outer .owl-stage .owl-item .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pseudo-border::before {
+  position: absolute;
+  height: 4px;
+  width: 4px;
+  background-color: white;
+  content: "";
+  bottom: 0;
+  animation: left-to-right 3s linear infinite;
+  z-index: 1;
+}
+@keyframes left-to-right {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.pseudo-border::after {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #0284c7;
+  bottom: 0;
+  left: 0;
+  content: "";
+}
+.clients-image {
+  height: 70px !important;
+}
+.clients-image img {
+  width: 80% !important;
+  object-fit: contain !important;
+}
+
+/* about section */
+.image-shape img {
+  border-radius: 50% 60% 40% 70% / 60% 40% 70% 50%;
+}
+
+.ReactModal__Overlay{
+  z-index: 100 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .fa-chevron-down {
+    display: block !important;
+  }
+  .custom-navbar {
+    position: absolute;
+    width: 230px;
+    top: 0px;
+    right: 0px;
+    background-color: #0087bc;
+    padding: 20px;
+  }
+  .custom-navbar nav ul {
+    flex-direction: column;
+    align-items: start;
+  }
+  .custom-border:hover::after {
+    width: 0%;
+  }
+}
